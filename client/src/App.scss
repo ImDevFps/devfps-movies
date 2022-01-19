@@ -1,0 +1,32 @@
+@import "~fluid-player/src/css/fluidplayer.css";
+@font-face {
+  font-family: "Sahel";
+  font-weight: 200;
+  src: url("./fonts/Sahel.woff") format("woff");
+}
+:root {
+  --main-text-color: white;
+  --bg-color: #141415;
+  --details-font-size: 12px;
+}
+* {
+  font-family: Sahel !important;
+  user-select: none;
+  a {
+    text-decoration: none;
+    color: var(--main-text-color);
+  }
+  li {
+    list-style: none;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+}

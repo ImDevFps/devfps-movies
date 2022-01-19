@@ -1,0 +1,70 @@
+.edit-list {
+  margin-top: 10%;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100vw;
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      height: 50px;
+      width: 80vw;
+      gap: 20px;
+      input,
+      select {
+        width: 70%;
+        border-radius: 5px;
+        padding: 5px;
+        border: 2px solid rgba(35, 35, 155, 0.5);
+        &:focus {
+          border-radius: 0;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid red;
+        }
+      }
+      select {
+        width: 71%;
+      }
+      .existing-lists {
+        padding: 10px;
+        height: 50px;
+        overflow-y: scroll;
+        width: 46%;
+        border-radius: 5px;
+        border: 2px solid rgba(35, 35, 155, 0.5);
+      }
+    }
+    .last-list {
+      margin-bottom: 20px;
+    }
+  }
+  .handler-buttons {
+    display: flex;
+    justify-content: center;
+    button {
+      width: 30%;
+      height: 40px;
+      border-radius: 5px;
+      color: white;
+      margin: 5px 0;
+      &:disabled {
+        background-color: grey;
+      }
+    }
+    :first-child {
+      background-color: rgb(74, 74, 236);
+      border: none;
+      margin-right: 10px;
+    }
+    :last-child {
+      background-color: rgb(243, 62, 62);
+      border: none;
+    }
+  }
+}

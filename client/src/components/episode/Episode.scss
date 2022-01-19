@@ -1,0 +1,49 @@
+.episode-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 15px 25px;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #333333;
+  }
+  .episode-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+
+    svg {
+      position: relative;
+      z-index: 1;
+      display: none;
+      font-size: 2.6rem !important;
+
+      :first-child {
+        color: black;
+      }
+    }
+    &:hover svg {
+      display: block;
+    }
+
+    .wrapper {
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: absolute;
+      z-index: 0;
+      opacity: 0.85;
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+}

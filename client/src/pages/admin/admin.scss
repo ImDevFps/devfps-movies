@@ -1,0 +1,58 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-bottom: 15%;
+  gap: 10px;
+
+  .movie-list {
+    padding-top: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  a {
+    color: black;
+  }
+  .create-movies {
+    width: 40%;
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        input {
+          height: 40px;
+          border-radius: 3px;
+          outline: none;
+          border: 1px solid rgba($color: #8f4b4b, $alpha: 0.7);
+          width: 100%;
+          padding-left: 5px;
+        }
+        button {
+          height: 40px;
+          color: white;
+          border-radius: 3px;
+          width: 100%;
+          border: none;
+          background-color: rgb(6, 163, 6);
+          padding: 0 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

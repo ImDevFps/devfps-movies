@@ -1,0 +1,29 @@
+.season-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 16px;
+  color: white;
+  width: 80%;
+
+  .season-title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #f2b551;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .episodes-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2px 0;
+  }
+}

@@ -1,0 +1,19 @@
+.movie-card {
+  cursor: pointer;
+  img {
+    width: 225px;
+    height: 125px;
+    border-radius: 3px;
+  }
+  &:hover {
+    transform: scale(1.5);
+    .play {
+      display: block;
+    }
+  }
+  .play {
+    color: white;
+    display: none;
+    font-size: 10px;
+  }
+}

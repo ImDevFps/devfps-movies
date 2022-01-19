@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  direction: rtl;
+  background-color: rgba(15, 15, 15, 0.8);
+  // @media screen and (max-width: 800px) {
+  //   flex-direction: column;
+  //   right: -200px;
+  //   width: 200px;
+  //   .X-button {
+  //     position: fixed;
+  //     right: 0;
+  //     padding: 15px 20px;
+  //     background-color: rgba(15, 15, 15, 0.8);
+  //     cursor: pointer;
+  //   }
+  // }
+
+  .category-bar {
+    margin-right: 40px;
+  }
+  ul {
+    padding-inline-start: 10px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    // @media screen and (max-width: 800px) {
+    //   flex-direction: column;
+    // }
+  }
+  .search-bar {
+    margin-left: 50px;
+  }
+}
